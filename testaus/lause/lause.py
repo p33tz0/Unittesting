@@ -43,6 +43,3 @@ def run_sentence(sentence):
     sentence = capitalize_first_letter(sentence)
     sentence = check_punctuation(sentence)
     return sentence
-
-run_sentence("kissa on kalja")
-print(run_sentence("kissa on kalja"))
