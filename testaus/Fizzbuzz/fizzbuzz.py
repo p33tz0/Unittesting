@@ -1,4 +1,4 @@
-#Function that takes a number and returns Fizz, Buzz or FizzBuzz
+# Function that takes a number and returns Fizz, Buzz or FizzBuzz
 def num(x):
     if x % 3 == 0 and x % 5 == 0:
         return "FizzBuzz"
