@@ -48,6 +48,10 @@ class TestCalculatorJako(unittest.TestCase):
     def test_jako_numbers_takes_rises_error_if_parameters_are_not_numbers(self):
         with self.assertRaises(TypeError):
             calculator.jako(1, "a")
+        
+    def test_jako_numbers_takes_rises_error_if_parameters_are_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            calculator.jako(1, 0)
 
 
 class TestCalculatorKertolasku(unittest.TestCase):

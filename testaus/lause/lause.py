@@ -1,6 +1,6 @@
 # Function that reverses the order of letters in a word if it has 5 letters
 def reverse_word(word):
-    if len(word) == 5:
+    if len(word) >= 5:
         return word[::-1]
     else:
         return word

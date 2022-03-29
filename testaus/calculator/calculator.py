@@ -12,8 +12,14 @@ def minus(x, y):
 
 # function that returns quotient of two numbers
 def jako(x, y):
-    g = float("{0:.2f}".format(x / y))
-    return g
+    # Raise error if dividing zero or dividing by zero
+    if y == 0 or x == 0:
+        raise ZeroDivisionError("Error: Cannot divide by zero")
+    else:    
+        g = float("{0:.2f}".format(x / y))
+        return g
+
+
 
 
 # function that returns product of two numbers
